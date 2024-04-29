@@ -4,7 +4,7 @@ import store from './redux/store';
 import './App.css';
 import CakeContainer from './components/CakeContainer';
 import HooksCakeContainer from './components/HooksCakeContainer';
-import IceCreamContainer from './components/HooksIceCreamContainer';
+import HooksIceCreamContainer from './components/HooksIceCreamContainer';
 
 
 function App() {
@@ -13,7 +13,7 @@ function App() {
     <div className="App">
       <HooksCakeContainer/>
       <CakeContainer/>
-      <IceCreamContainer/>
+      <HooksIceCreamContainer/>
     </div>
     </Provider>
   );
