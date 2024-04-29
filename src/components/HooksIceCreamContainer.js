@@ -3,11 +3,11 @@ import { useDispatch, useSelector } from 'react-redux'
 import { buyIceCream } from "../redux" 
 
 const HooksIceCreamContainer = () => {
-  const numOfIceCream = useSelector(state => state.iceCream.numOfIceCream)
+  const numOfIceCreams = useSelector(state => state.iceCream.numOfIceCreams)
   const dispatch = useDispatch()
   return (
     <div>
-        <h3>IceCreamContainer - {numOfIceCream}</h3>
+        <h3>IceCreamContainer - {numOfIceCreams}</h3>
         <button onClick={()=>dispatch(buyIceCream)}>Buy Ice Cream</button>
     </div>
   )
